@@ -70,12 +70,16 @@ function SectionEyebrow({ children, number }) {
   );
 }
 
-function PhotoPlaceholder({ variant, label, detail }) {
+function PhotoPlaceholder({ variant, label, detail, src, alt }) {
   return (
-    <div className={`photo-placeholder photo-${variant}`} role="img" aria-label={`${label}. Photography placeholder.`}>
-      <span className="photo-mark" aria-hidden="true"><Scissors size={26} strokeWidth={1.1} /></span>
-      <span className="photo-placeholder-label">{label}</span>
-      <span className="photo-placeholder-detail">{detail || 'Photography placeholder'}</span>
+    <div className={`photo-placeholder photo-${variant} ${src ? 'has-shop-photo' : ''}`} role={src ? undefined : 'img'} aria-label={src ? undefined : `${label}. Photography placeholder.`}>
+      {src ? <img className="shop-photo" src={src} alt={alt || label} loading={variant === 'hero' ? 'eager' : 'lazy'} decoding="async" /> : (
+        <>
+          <span className="photo-mark" aria-hidden="true"><Scissors size={26} strokeWidth={1.1} /></span>
+          <span className="photo-placeholder-label">{label}</span>
+          <span className="photo-placeholder-detail">{detail || 'Photography placeholder'}</span>
+        </>
+      )}
       <span className="photo-frame-corner photo-frame-tl" aria-hidden="true" />
       <span className="photo-frame-corner photo-frame-br" aria-hidden="true" />
     </div>
@@ -94,11 +98,11 @@ function HeroSection() {
             <a className="button button-gold" href="#services">Explore services <ArrowDownRight size={17} aria-hidden="true" /></a>
             <a className="text-link" href="#about">Discover the shop <ArrowDown size={14} aria-hidden="true" /></a>
           </div>
-          <div className="hero-note"><span className="gold-dot" aria-hidden="true" /> {shopConfig.name} <span className="note-divider" aria-hidden="true">/</span> Details being finalized</div>
+          <div className="hero-note"><span className="gold-dot" aria-hidden="true" /> {shopConfig.name} <span className="note-divider" aria-hidden="true">/</span> Gwalior, Madhya Pradesh</div>
         </div>
         <div className="hero-visual-wrap">
-          <div className="hero-visual-topline"><span>SHOP DETAILS PENDING</span><span>01 — 03</span></div>
-          <PhotoPlaceholder variant="hero" label="Barber at work" detail="Hero barber photography placeholder" />
+          <div className="hero-visual-topline"><span>INSIDE FIVE STAR</span><span>01 — 38</span></div>
+          <PhotoPlaceholder variant="hero" label="Inside Five Star Family Salon" src="/shop-gallery/16-5-star-the-family-saloon-kishanbagh-gwalior-salons-wvk40ah1x0.jpg" alt="Five Star Family Salon in Gwalior" />
           <div className="hero-side-caption"><span>{shopConfig.name.toUpperCase()}</span><span>CRAFT • CARE • CHARACTER</span></div>
           <div className="hero-roundel" aria-hidden="true"><Star size={14} fill="currentColor" /><span>THE BARBER<br />EXPERIENCE</span></div>
         </div>
@@ -113,14 +117,14 @@ function AboutSection() {
     <section className="about-section section-pad" id="about" aria-labelledby="about-title">
       <div className="about-grid page-wrap">
         <div className="about-image-column">
-          <PhotoPlaceholder variant="about" label="The shop" detail="Interior photography placeholder" />
+          <PhotoPlaceholder variant="about" label="Inside Five Star Family Salon" src="/shop-gallery/17-5-star-the-family-saloon-kishanbagh-gwalior-salons-bv4pk7aryi.jpg" alt="Shop interior and salon equipment" />
           <span className="image-index">FIG. 01 <span>THE SPACE</span></span>
         </div>
         <div className="about-copy">
           <SectionEyebrow number="01">A little about us</SectionEyebrow>
           <h2 id="about-title">Good grooming<br />is <em>personal.</em></h2>
-          <p className="body-copy">{shopConfig.name} is being shaped around the details that make a visit feel considered: a welcoming chair, thoughtful grooming, and time well spent.</p>
-          <p className="body-copy body-copy-muted">We’re getting the finishing touches in place. Shop information will be updated here once confirmed.</p>
+          <p className="body-copy">{shopConfig.name} is a family salon in Gwalior for everyday hair and grooming services. Explore the shop through its own photos and send an appointment request directly on WhatsApp.</p>
+          <p className="body-copy body-copy-muted">Appointment requests are confirmed by the shop over WhatsApp.</p>
           <a className="underlined-link" href="#visit">Get to know the shop <ArrowRight size={16} aria-hidden="true" /></a>
           <div className="about-stamp"><Sparkles size={19} strokeWidth={1.3} aria-hidden="true" /><span>MADE FOR<br />YOUR MOMENT</span></div>
         </div>
@@ -156,19 +160,22 @@ function ServicesSection() {
 
 function GallerySection() {
   const gallery = [
-    { label: 'The classic cut', detail: 'Haircut photography placeholder', variant: 'gallery-one', number: '01' },
-    { label: 'The clean fade', detail: 'Fade photography placeholder', variant: 'gallery-two', number: '02' },
-    { label: 'The beard finish', detail: 'Beard photography placeholder', variant: 'gallery-three', number: '03' },
+    { label: 'Salon details', src: '/shop-gallery/18-5-star-the-family-saloon-kishanbagh-gwalior-salons-rrls42f23x.jpg', number: '01' },
+    { label: 'A look inside', src: '/shop-gallery/19-5-star-the-family-saloon-kishanbagh-gwalior-salons-cxh3zd253s.jpg', number: '02' },
+    { label: 'The salon space', src: '/shop-gallery/20-5-star-the-family-saloon-kishanbagh-gwalior-salons-13t1l9b25p.jpg', number: '03' },
+    { label: 'Five Star in Gwalior', src: '/shop-gallery/21-5-star-the-family-saloon-kishanbagh-gwalior-salons-7f1ndyc29f.jpg', number: '04' },
+    { label: 'Salon services', src: '/shop-gallery/22-5-star-the-family-saloon-kishanbagh-gwalior-salons-33p7bu9ixk.jpg', number: '05' },
+    { label: 'Visit Five Star', src: '/shop-gallery/23-5-star-the-family-saloon-lashkar-gwalior-beauty-spas-mgpyg.jpg', number: '06' },
   ];
   return (
     <section className="gallery-section section-pad" id="gallery" aria-labelledby="gallery-title">
       <div className="page-wrap">
-        <div className="gallery-heading"><div><SectionEyebrow number="03">The details</SectionEyebrow><h2 id="gallery-title">A closer <em>look.</em></h2></div><p className="section-intro">The gallery is ready for the shop’s own work. These labeled placeholders will be replaced with approved photography.</p></div>
+        <div className="gallery-heading"><div><SectionEyebrow number="03">The details</SectionEyebrow><h2 id="gallery-title">A closer <em>look.</em></h2></div><p className="section-intro">A selection from the shop’s photo gallery. More photos from Five Star are on the way.</p></div>
         <div className="gallery-grid">
           {gallery.map((image) => (
             <figure className="gallery-item" key={image.number}>
-              <PhotoPlaceholder variant={image.variant} label={image.label} detail={image.detail} />
-              <figcaption><span>{image.number} / {image.label}</span><span className="gallery-caption-tag">PHOTO TO COME</span></figcaption>
+              <PhotoPlaceholder variant={`gallery-${image.number}`} label={image.label} src={image.src} alt={image.label} />
+              <figcaption><span>{image.number} / {image.label}</span><span className="gallery-caption-tag">FIVE STAR · GWALIOR</span></figcaption>
             </figure>
           ))}
         </div>
