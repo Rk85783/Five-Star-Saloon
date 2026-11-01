@@ -102,7 +102,7 @@ function HeroSection() {
         </div>
         <div className="hero-visual-wrap">
           <div className="hero-visual-topline"><span>INSIDE FIVE STAR</span><span>01 — 38</span></div>
-          <PhotoPlaceholder variant="hero" label="Inside Five Star Family Salon" src="/shop-gallery/16-5-star-the-family-saloon-kishanbagh-gwalior-salons-wvk40ah1x0.jpg" alt="Five Star Family Salon in Gwalior" />
+          <PhotoPlaceholder variant="hero" label="Inside Five Star Family Salon" src="/shop-gallery/04-abc-gwalior-ssh9z.jpg" alt="Salon chairs and mirrors inside Five Star Family Salon" />
           <div className="hero-side-caption"><span>{shopConfig.name.toUpperCase()}</span><span>CRAFT • CARE • CHARACTER</span></div>
           <div className="hero-roundel" aria-hidden="true"><Star size={14} fill="currentColor" /><span>THE BARBER<br />EXPERIENCE</span></div>
         </div>
@@ -117,7 +117,7 @@ function AboutSection() {
     <section className="about-section section-pad" id="about" aria-labelledby="about-title">
       <div className="about-grid page-wrap">
         <div className="about-image-column">
-          <PhotoPlaceholder variant="about" label="Inside Five Star Family Salon" src="/shop-gallery/17-5-star-the-family-saloon-kishanbagh-gwalior-salons-bv4pk7aryi.jpg" alt="Shop interior and salon equipment" />
+          <PhotoPlaceholder variant="about" label="Inside Five Star Family Salon" src="/shop-gallery/05-abc-gwalior-1fbuk.jpg" alt="Hair wash basin and chair inside the salon" />
           <span className="image-index">FIG. 01 <span>THE SPACE</span></span>
         </div>
         <div className="about-copy">
@@ -160,17 +160,17 @@ function ServicesSection() {
 
 function GallerySection() {
   const gallery = [
-    { label: 'Salon details', src: '/shop-gallery/18-5-star-the-family-saloon-kishanbagh-gwalior-salons-rrls42f23x.jpg', number: '01' },
-    { label: 'A look inside', src: '/shop-gallery/19-5-star-the-family-saloon-kishanbagh-gwalior-salons-cxh3zd253s.jpg', number: '02' },
-    { label: 'The salon space', src: '/shop-gallery/20-5-star-the-family-saloon-kishanbagh-gwalior-salons-13t1l9b25p.jpg', number: '03' },
-    { label: 'Five Star in Gwalior', src: '/shop-gallery/21-5-star-the-family-saloon-kishanbagh-gwalior-salons-7f1ndyc29f.jpg', number: '04' },
-    { label: 'Salon services', src: '/shop-gallery/22-5-star-the-family-saloon-kishanbagh-gwalior-salons-33p7bu9ixk.jpg', number: '05' },
-    { label: 'Visit Five Star', src: '/shop-gallery/23-5-star-the-family-saloon-lashkar-gwalior-beauty-spas-mgpyg.jpg', number: '06' },
+    { label: 'Salon entrance', src: '/shop-gallery/01-5-star-the-family-saloon-lashkar-gwalior-beauty-spas-i8ckd.jpg', number: '01' },
+    { label: 'Barber chairs', src: '/shop-gallery/04-abc-gwalior-ssh9z.jpg', number: '02' },
+    { label: 'Hair wash station', src: '/shop-gallery/05-abc-gwalior-1fbuk.jpg', number: '03' },
+    { label: 'Salon products', src: '/shop-gallery/15-abc-gwalior-gmxi9.jpg', number: '04' },
+    { label: 'Five Star signage', src: '/shop-gallery/32-5-star-the-family-saloon-gwalior-1meye.jpg', number: '05' },
+    { label: 'Barbershop wall art', src: '/shop-gallery/34-5-star-the-family-saloon-kishanbagh-gwalior-salons-l2gsto1tbi.jpg', number: '06' },
   ];
   return (
     <section className="gallery-section section-pad" id="gallery" aria-labelledby="gallery-title">
       <div className="page-wrap">
-        <div className="gallery-heading"><div><SectionEyebrow number="03">The details</SectionEyebrow><h2 id="gallery-title">A closer <em>look.</em></h2></div><p className="section-intro">A selection from the shop’s photo gallery. More photos from Five Star are on the way.</p></div>
+        <div className="gallery-heading"><div><SectionEyebrow number="03">The details</SectionEyebrow><h2 id="gallery-title">A closer <em>look.</em></h2></div><p className="section-intro">A selection of Five Star’s entrance, salon setup and details.</p></div>
         <div className="gallery-grid">
           {gallery.map((image) => (
             <figure className="gallery-item" key={image.number}>
