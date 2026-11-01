@@ -1,0 +1,85 @@
+[
+  {
+    "name": "mobile",
+    "status": 200,
+    "title": "Five Star Saloon",
+    "metrics": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "document": {
+        "width": 390,
+        "height": 6931
+      },
+      "horizontalOverflow": false,
+      "sectionCount": 7,
+      "missingAnchorTargets": [],
+      "images": [],
+      "placeholders": 6,
+      "bookingDisabled": true,
+      "focusOutline": "none"
+    },
+    "menu": {
+      "expanded": "true",
+      "visible": true,
+      "closedAfterLink": "false",
+      "hashAfterLink": "#services"
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  },
+  {
+    "name": "tablet",
+    "status": 200,
+    "title": "Five Star Saloon",
+    "metrics": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "document": {
+        "width": 768,
+        "height": 5773
+      },
+      "horizontalOverflow": false,
+      "sectionCount": 7,
+      "missingAnchorTargets": [],
+      "images": [],
+      "placeholders": 6,
+      "bookingDisabled": true,
+      "focusOutline": "none"
+    },
+    "menu": null,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  },
+  {
+    "name": "desktop",
+    "status": 200,
+    "title": "Five Star Saloon",
+    "metrics": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "document": {
+        "width": 1440,
+        "height": 5158
+      },
+      "horizontalOverflow": false,
+      "sectionCount": 7,
+      "missingAnchorTargets": [],
+      "images": [],
+      "placeholders": 6,
+      "bookingDisabled": true,
+      "focusOutline": "none"
+    },
+    "menu": null,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  }
+]

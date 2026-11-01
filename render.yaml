@@ -1,0 +1,7 @@
+services:
+  - type: web
+    runtime: static
+    name: five-star-saloon
+    buildCommand: npm ci && npm run build
+    staticPublishPath: client/dist
+    autoDeployTrigger: commit

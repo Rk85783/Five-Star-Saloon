@@ -1,0 +1,44 @@
+{
+  "listingPhotoCount": 38,
+  "downloadedFromVisibleListingPreview": 6,
+  "fullGalleryDirectory": "./full-gallery/",
+  "fullGalleryDownloadedCount": 38,
+  "images": [
+    {
+      "file": "01-listing-photo.jpg",
+      "source": "https://content.jdmagicbox.com/v2/comp/gwalior/f1/9999px751.x751.180313194246.r3f1/catalogue/5-star-the-family-saloon-lashkar-gwalior-beauty-spas-i8ckd.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 98445
+    },
+    {
+      "file": "02-listing-photo.jpg",
+      "source": "https://content.jdmagicbox.com/comp/gwalior/f1/9999px751.x751.180313194246.r3f1/catalogue/5-star-the-family-saloon-sagartal-road-gwalior-city-gwalior-beauty-spas-for-women-p5ily1i1l5.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 72313
+    },
+    {
+      "file": "03-listing-photo.jpg",
+      "source": "https://content.jdmagicbox.com/comp/gwalior/f1/9999px751.x751.180313194246.r3f1/catalogue/5-star-the-family-saloon-lashkar-gwalior-beauty-spas-chh47v4ats.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 47100
+    },
+    {
+      "file": "04-listing-photo.jpg",
+      "source": "https://content.jdmagicbox.com/comp/gwalior/f1/9999px751.x751.180313194246.r3f1/catalogue/abc-gwalior-ssh9z.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 63478
+    },
+    {
+      "file": "05-listing-photo.jpg",
+      "source": "https://content.jdmagicbox.com/comp/gwalior/f1/9999px751.x751.180313194246.r3f1/catalogue/abc-gwalior-1fbuk.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 152180
+    },
+    {
+      "file": "06-listing-photo.jpg",
+      "source": "https://content.jdmagicbox.com/comp/gwalior/f1/9999px751.x751.180313194246.r3f1/catalogue/abc-gwalior-668cf.jpg",
+      "contentType": "image/jpeg",
+      "bytes": 69469
+    }
+  ]
+}

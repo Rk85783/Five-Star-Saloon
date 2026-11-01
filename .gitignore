@@ -1,0 +1,11 @@
+node_modules/
+.npm-cache/
+.playwright-browsers/
+client/dist/
+server/dist/
+.env
+.env.*
+!.env.example
+npm-debug.log*
+.DS_Store
+Thumbs.db
